@@ -1,0 +1,2 @@
+def varsuff():
+	pass

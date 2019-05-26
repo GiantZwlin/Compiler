@@ -1,0 +1,2 @@
+def vandefi():
+	pass

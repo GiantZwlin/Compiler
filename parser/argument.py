@@ -1,0 +1,2 @@
+def argument():
+	pass
