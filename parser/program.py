@@ -3,5 +3,5 @@ from parser.proghead import proghead
 
 
 def program():
-	proghead()
-	block()
+    proghead()
+    block()

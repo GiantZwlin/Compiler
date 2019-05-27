@@ -13,3 +13,5 @@ def proghead():
         raise SyntaxError()
     if tk.token.code == CodeTable[';']:
         tk.token = next(tk.tg)
+    else:
+        raise SyntaxError()

@@ -1,2 +1,9 @@
+import lexer.token as tk
+from lexer.codetable import CodeTable
+
+
 def typeil():
-	pass
+    if tk.token.code == CodeTable['INTEGER'] or tk.token.code == CodeTable['LONG']:
+        tk.token = next(tk.tg)
+    else:
+        raise SyntaxError()
