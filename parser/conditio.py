@@ -1,6 +1,6 @@
 from lexer.codetable import CodeTable
-from parser.express import express
-from parser.respoper import respoper
+from express import express
+from respoper import respoper
 import lexer.token as tk
 
 

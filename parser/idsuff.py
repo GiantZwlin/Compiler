@@ -9,5 +9,4 @@ def idsuff():
             tk.token = next(tk.tg)
         else:
             raise SyntaxError()
-    else:
-        raise SyntaxError()
+        idsuff()

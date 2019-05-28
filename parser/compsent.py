@@ -1,11 +1,11 @@
 from lexer.codetable import CodeTable
-from parser.sentence import sentence
-from parser.sentsuff import sentsuff
+from sentence import sentence
+from sentsuff import sentsuff
 import lexer.token as tk
 
 
-
 def compsent():
+    # 复合语句
     if tk.token.code == CodeTable['BEGIN']:
         tk.token = next(tk.tg)
     else:

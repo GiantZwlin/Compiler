@@ -1,7 +1,7 @@
 import lexer.token as tk
 from lexer.codetable import CodeTable
-from parser.term import term
-from parser.termsuff import termsuff
+from term import term
+from termsuff import termsuff
 
 
 def express():

@@ -1,6 +1,6 @@
 import lexer.token as tk
 from lexer.codetable import CodeTable
-from parser.typeil import typeil
+from typeil import typeil
 
 
 def argument():

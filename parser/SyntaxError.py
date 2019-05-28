@@ -1,3 +1,4 @@
 class SyntaxError(Exception):
-    def __init__(self):
-        self.message = "SyntaxError"
+    def __init__(self, expression, message):
+        self.expression = expression
+        self.message = message

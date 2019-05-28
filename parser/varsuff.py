@@ -1,6 +1,6 @@
 import lexer.token as tk
 from lexer.codetable import CodeTable
-from parser.vandefi import vandefi
+from vandefi import vandefi
 
 
 def varsuff():

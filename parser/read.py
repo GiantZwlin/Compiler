@@ -1,6 +1,6 @@
 import lexer.token as tk
 from lexer.codetable import CodeTable
-from parser.idsuff import idsuff
+from idsuff import idsuff
 
 
 def read():

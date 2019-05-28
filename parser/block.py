@@ -1,7 +1,7 @@
-from parser.compsent import compsent
-from parser.consexpl import consexpl
-from parser.procdefi import procdefi
-from parser.varexl import varexl
+from compsent import compsent
+from consexpl import consexpl
+from procdefi import procdefi
+from varexl import varexl
 
 
 def block():

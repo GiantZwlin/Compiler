@@ -6,7 +6,7 @@ def proghead():
     if tk.token.code == CodeTable['PROGRAM']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError()
+        raise SyntaxError("There should be a ‘PROGRAM’")
     if tk.token.code == CodeTable['IDENTIFIER']:
         tk.token = next(tk.tg)
     else:

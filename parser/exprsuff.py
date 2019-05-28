@@ -1,6 +1,6 @@
 import lexer.token as tk
 from lexer.codetable import CodeTable
-from parser.express import express
+from express import express
 
 
 def exprsuff():

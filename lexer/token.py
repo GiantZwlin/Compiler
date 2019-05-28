@@ -7,7 +7,7 @@ class Token:
     def __init__(self, token):
         match = re.search(self.REGEX, token)
         self.word = match.group('word')
-        self.code = match.group('code')
+        self.code = int(match.group('code'))
 
     def __str__(self):
         return "< {} , {} >".format(self.word, self.code)
@@ -20,9 +20,10 @@ def get_next_token(lexfile):
     while now < cnt:
         ret = Token(token_list[now])
         now += 1
+        print(ret)
         yield ret
 
 
-tg = get_next_token("/home/memoria/PycharmProjects/Compiler/parser/lex.out")
+tg = get_next_token("/home/memoria/PycharmProjects/Compiler/lex.out")
 
 token = next(tg)

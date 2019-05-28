@@ -1,23 +1,23 @@
 import lexer.token as tk
 from lexer.codetable import CodeTable
-from parser.assipro import assipro
-from parser.compsent import compsent
-from parser.ifsent import ifsent
-from parser.read import read
-from parser.whilsent import whilsent
-from parser.write import write
+import assipro
+import compsent
+import ifsent
+import read
+import whilsent
+import write
 
 
 def sentence():
-    if tk.token.code == CodeTable['PROCEDURE']:
-        assipro()
-    elif tk.token.code == CodeTable['PROCEDURE']:
-        ifsent()
-    elif tk.token.code == CodeTable['PROCEDURE']:
-        whilsent()
-    elif tk.token.code == CodeTable['PROCEDURE']:
-        read()
-    elif tk.token.code == CodeTable['PROCEDURE']:
-        write()
-    elif tk.token.code == CodeTable['PROCEDURE']:
-        compsent()
+    if tk.token.code == CodeTable['IDENTIFIER']:
+        assipro.assipro()
+    elif tk.token.code == CodeTable['IF']:
+        ifsent.ifsent()
+    elif tk.token.code == CodeTable['WHILE']:
+        whilsent.whilsent()
+    elif tk.token.code == CodeTable['READ']:
+        read.read()
+    elif tk.token.code == CodeTable['WRITE']:
+        write.write()
+    elif tk.token.code == CodeTable['BEGIN']:
+        compsent.compsent()

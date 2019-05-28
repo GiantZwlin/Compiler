@@ -1,7 +1,7 @@
 import lexer.token as tk
 from lexer.codetable import CodeTable
-from parser.factor import factor
-from parser.muloper import muloper
+from factor import factor
+from muloper import muloper
 
 
 def factsuff():

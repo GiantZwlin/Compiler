@@ -1,7 +1,7 @@
 import lexer.token as tk
 from lexer.codetable import CodeTable
-from parser.idsuff import idsuff
-from parser.typeil import typeil
+from idsuff import idsuff
+from typeil import typeil
 
 
 def vandefi():
@@ -10,8 +10,12 @@ def vandefi():
     else:
         raise SyntaxError()
     idsuff()
-    if tk.token.code == CodeTable['IDENTIFIER']:
+    if tk.token.code == CodeTable[':']:
         tk.token = next(tk.tg)
     else:
         raise SyntaxError()
     typeil()
+    if tk.token.code == CodeTable[';']:
+        tk.token = next(tk.tg)
+    else:
+        raise SyntaxError()
