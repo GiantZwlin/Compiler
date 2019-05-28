@@ -8,10 +8,10 @@ def ifsent():
     if tk.token.code == CodeTable['IF']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError()
+        raise SyntaxError("There should be a ‘IF’ ")
     conditio.conditio()
     if tk.token.code == CodeTable['THEN']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError()
+        raise SyntaxError("There should be a ‘THEN’ ")
     sentence.sentence()

@@ -8,14 +8,14 @@ def vandefi():
     if tk.token.code == CodeTable['IDENTIFIER']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError()
+        raise SyntaxError("There should be a ‘IDENTIFIER’ ")
     idsuff()
     if tk.token.code == CodeTable[':']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError()
+        raise SyntaxError("There should be a ‘:’ ")
     typeil()
     if tk.token.code == CodeTable[';']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError()
+        raise SyntaxError("There should be a ‘;’ ")

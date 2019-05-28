@@ -8,10 +8,10 @@ def whilsent():
     if tk.token.code == CodeTable['WHILE']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError()
+        raise SyntaxError("There should be a ‘WHILE’ ")
     conditio.conditio()
     if tk.token.code == CodeTable['DO']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError()
+        raise SyntaxError("There should be a ‘DO’ ")
     sentence.sentence()

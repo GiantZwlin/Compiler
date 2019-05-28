@@ -7,5 +7,5 @@ def assipro():
     if tk.token.code == CodeTable['IDENTIFIER']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError()
+        raise SyntaxError("There should be a ‘IDENTIFIER’ ")
     suffix()

@@ -8,4 +8,4 @@ def respoper():
         '<>']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError()
+        raise SyntaxError("There should be a ‘resp operator’ ")
