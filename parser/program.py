@@ -10,4 +10,4 @@ def program():
     if tk.token.code == CodeTable['.']:
         print("Success")
     else:
-        raise SyntaxError("There should be a ‘.’ ")
+        raise SyntaxError("SyntaxError at line:{},column:{}".format(tk.token.line, tk.token.column))

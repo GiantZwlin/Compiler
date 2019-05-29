@@ -11,6 +11,6 @@ def factor():
         if tk.token.code == CodeTable[')']:
             tk.token = next(tk.tg)
         else:
-            raise SyntaxError("There should be a ‘)’ ")
+            raise SyntaxError("SyntaxError at line:{},column:{}".format(tk.token.line, tk.token.column))
     else:
-        raise SyntaxError("There should be a ‘IDENTIFIER’ or 'UNSIGNED' ")
+        raise SyntaxError("SyntaxError at line:{},column:{}".format(tk.token.line, tk.token.column))

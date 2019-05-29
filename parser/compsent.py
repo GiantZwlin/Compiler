@@ -9,10 +9,10 @@ def compsent():
     if tk.token.code == CodeTable['BEGIN']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError("There should be a ‘BEGIN’ ")
+        raise SyntaxError("SyntaxError at line:{},column:{}".format(tk.token.line, tk.token.column))
     sentence()
     sentsuff()
     if tk.token.code == CodeTable['END']:
         tk.token = next(tk.tg)
     else:
-        raise SyntaxError("There should be a ‘END’ ")
+        raise SyntaxError("SyntaxError at line:{},column:{}".format(tk.token.line, tk.token.column))

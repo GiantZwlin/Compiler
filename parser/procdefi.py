@@ -24,5 +24,5 @@ def procdefi():
         if tk.token.code == CodeTable[';']:
             tk.token=next(tk.tg)
         else:
-            raise SyntaxError("There should be a ‘;’ ")
+            raise SyntaxError("SyntaxError at line:{},column:{}".format(tk.token.line, tk.token.column))
         procsuff.procsuff()
